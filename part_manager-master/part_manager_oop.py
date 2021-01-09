@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import*
 from tkinter import messagebox
 from db import Database
-import time;
+import time
 
 # Instanciate databse object
 db = Database('store.db')
@@ -66,12 +66,14 @@ class Application(tk.Frame):
         # Create scrollbar
         self.scrollbar = tk.Scrollbar(self.master)
         self.scrollbar.grid(row=3, column=3)
+        
         # Set scrollbar to parts
         self.parts_list.configure(yscrollcommand=self.scrollbar.set)
         self.scrollbar.configure(command=self.parts_list.yview)
 
         # Bind select
         self.parts_list.bind('<<ListboxSelect>>', self.select_item)
+        self.parts_list.bind
 
         # Buttons
         self.add_btn = tk.Button(

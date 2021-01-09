@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 from db import Database
-import time;
+import time
 
 db = Database('store.db')
 
